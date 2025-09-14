@@ -18,9 +18,8 @@ class KotlinDataTypes{
        var informations = "My name is $myName\nMy age is $myAge\nMyHeight is $myHeight\nMy gender is <$myGender>\nMy country is $myCountry\nAm I developper ? $amIDevelopper\nMy salary is $myNetSalary Dhs";
        
        //This is  gonna be executed when the class is loaded
-       var checkingResult: String = if(amIDevelopper) "Yes, I am developper" else  "No, I am not developper"
        init{
-           println(checkingResult);
+           println("This function is executed first when the class is loaded");
        }
        
        
