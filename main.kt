@@ -1,5 +1,3 @@
-
-
 import KotlinFlowControl.KotlinFlowControl// import the class
 //import KotlinDataTypes.KotlinDataTypes  
 //import KotlinIO.KotlinIO
@@ -7,6 +5,7 @@ import KotlinFlowControl.KotlinFlowControl// import the class
 fun main() {
     //println(KotlinDataTypes.informations);
     //KotlinIO.getUserInfos();
-    println(KotlinFlowControl.informations);
+    println(KotlinFlowControl.checkAdult(52, "Driss"));
+    println(KotlinFlowControl.checkDay(1));
 
 }
