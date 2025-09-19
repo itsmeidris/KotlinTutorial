@@ -1,6 +1,8 @@
 //package KotlinBasics  // package name matches folder
 package KotlinDataTypes
 
+import kotlin.collections.mutableListOf
+
 class KotlinDataTypes{
     companion object{
         //Decalaring variables and constants data types
@@ -11,11 +13,16 @@ class KotlinDataTypes{
        var myCountry: String = "Morocco"; //String - variable
        var amIDevelopper: Boolean = true; //Boolean - variable
        var mySalary: Float = 10580.550F; //Float - variable
+       
+       //Mutable (Changeable) and Immutable (Unchangeable) list
+       val mySalaryGoals = listOf<Int>(15000, 25000, 35000 ,50000 ,150000 ,999999); //Immutable list
+       var mySkills = mutableListOf<String>("Flutter, Dart, Kotlin, Android, NodeJs ,JavaScript"); //Mutable list
+       
        //Converting data types
        var myNetSalary: Int = mySalary.toInt(); //Float to Integer
        
        //String concatenation 
-       var informations = "My name is $myName\nMy age is $myAge\nMyHeight is $myHeight\nMy gender is <$myGender>\nMy country is $myCountry\nAm I developper ? $amIDevelopper\nMy salary is $myNetSalary Dhs";
+       var informations = "My name is $myName\nMy age is $myAge\nMyHeight is $myHeight\nMy gender is <$myGender>\nMy country is $myCountry\nAm I developper ? $amIDevelopper\nMy salary is $myNetSalary Dhs\nMy salary goals are $mySalaryGoals\nMy skills are $mySkills";
        
        //This is  gonna be executed when the class is loaded
        init{

@@ -1,7 +1,13 @@
 package KotlinFlowControl
 
+import kotlin.collections.mutableListOf
+
 class KotlinFlowControl{
     companion object{
+        
+        var i: Int = 0;
+
+        val billioanaires = mutableListOf<String>("Jeff Bezos", "Elon Musk", "Bill Gates");
         
         //Normal if-else statement
         fun checkAdult(age: Int ,name: String) :String{
@@ -28,6 +34,19 @@ class KotlinFlowControl{
                 6 -> return "Today is Saturday";
                 7 -> return "Today is Sunday";
                 else -> return "Invalid day number"; //default case
+            }
+        }
+
+        //For loop 
+        fun displayBillionaires(){
+            println("List of the richest people in the world :");            
+            println("Add a new billionaire: ");
+            var newBillionaire: String = readLine()!!.trim().toString();
+            //Add method of lists
+            billioanaires.add(newBillionaire);
+            for(blr in billioanaires){
+                println("Billionaire No. ${i + 1}: $blr");
+                i++;
             }
         }
         
