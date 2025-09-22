@@ -8,4 +8,5 @@
 ## 5. What Is an `init` Block in Kotlin?
 ## 6. Use of the `lazy` Keyword
 ## 7. What are type of collections in Kotlin?
+## 8. Getters and setters in Koltin?
 
