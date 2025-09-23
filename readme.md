@@ -9,4 +9,4 @@
 ## 6. Use of the `lazy` Keyword
 ## 7. What are type of collections in Kotlin?
 ## 8. Getters and setters in Koltin?
-
+## 9. Abstraction in Kotlin?
