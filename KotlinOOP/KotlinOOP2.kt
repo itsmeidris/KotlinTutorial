@@ -1,5 +1,15 @@
-package KotlinOOP2
 
+fun main(){
+    val paymentType = listOf<Payment>(
+        CreditCardPayment("Credit card" ,99.99, "USD", "2025-09-23"),
+        PayPalPayment("PayPal" ,-199.99, "USD", "2025-11-03"),
+        CreditCardPayment("Credit card" ,5500.45, "USD", "2025-09-21"),
+    );
+    
+    for(payment in paymentType){
+        payment.processPayment();
+    }
+}
 //Mark the class as an abstract class 
 //By default all propeties and functions are open in abstract class
 abstract class Payment(

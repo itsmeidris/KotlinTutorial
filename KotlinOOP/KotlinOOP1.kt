@@ -1,5 +1,12 @@
-package KotlinOOP1
+fun main(){
+        // Instantiate the objects
 
+    val p1 = Person("Driss Loulidi", 23, 'M', true);
+    val emp1 = Employee("Driss Loulidi", 23, 'M', true, "Software engineer", 35000.50)
+
+    p1.displayInfos();
+    emp1.displayInfos();
+}
 //Marked as open to allow inheritance
 open class Person(var name: String,var age: Int?,var gender: Char,var isAdult: Boolean?){
     
